@@ -18,6 +18,9 @@ public class CheckPrime {
 			System.out.println("not prime");
 		else
 			System.out.println("prime");
+		
+		
+		System.out.println("App completed");
 
 	}
 
