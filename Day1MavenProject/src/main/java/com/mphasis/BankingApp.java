@@ -11,6 +11,7 @@ public class BankingApp {
 		sa.withDraw(5000);
 		System.out.println(sa.checkBalance());
 		System.out.println(sa);
+		System.out.println("Application completed");
 		
 		
 		//Account acc=new Account();
