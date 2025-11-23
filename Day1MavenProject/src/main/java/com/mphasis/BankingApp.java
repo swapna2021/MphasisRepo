@@ -2,7 +2,7 @@ package com.mphasis;
 
 public class BankingApp {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InsufficientFundsExceptions {
 		
 		SavingAccount sa=new SavingAccount(34567821, "Swapna Motupally", "ICICI","ICIC0000069" ,"Habsiguda" , 1000);
 		System.out.println(sa);
@@ -12,6 +12,8 @@ public class BankingApp {
 		System.out.println(sa.checkBalance());
 		System.out.println(sa);
 		System.out.println("Application completed");
+		
+		
 		
 		
 		//Account acc=new Account();

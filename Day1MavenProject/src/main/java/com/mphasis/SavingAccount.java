@@ -25,14 +25,14 @@ public class SavingAccount extends Account {
 				+ ", BranchName=" + getBranchName() + ", Pin=" + getPin() + "]";
 	}
 	
-	@Override
-	public void withDraw(double amount) {
+	
+	public void withDraw(double amount) throws InsufficientFundsExceptions {
 		if(amount<this.balance) {
 			this.balance=this.balance-amount;
 			System.out.println("Withdraw Successfull");
 		}
 		else
-			System.err.println("insufficient funds");
+			throw new InsufficientFundsExceptions("amount is more than existing balance");
 	}
 	
 	public void deposit(double amount) {

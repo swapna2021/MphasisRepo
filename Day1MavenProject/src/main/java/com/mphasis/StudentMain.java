@@ -13,7 +13,7 @@ public class StudentMain {
 		Student s2=new Student(12,"amit",90);
 //		Student.College c2=s2.new College("xyz college", "bglr", 1298);
 		//static inner class
-		College c=new  College("xyz college", "bglr", 1298);
+		Student.College c=new  Student.College("xyz college", "bglr", 1298);
 		c.sayHello();
 		c.display();
 		

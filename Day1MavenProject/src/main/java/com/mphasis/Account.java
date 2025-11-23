@@ -70,7 +70,7 @@ package com.mphasis;
 	
 	
 	
-	public abstract void withDraw(double amount) ;
+	public abstract void withDraw(double amount) throws InsufficientFundsExceptions ;
 	
 	
 	public abstract void deposit(double amount) ;
